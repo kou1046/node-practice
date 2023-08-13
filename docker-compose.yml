@@ -20,6 +20,8 @@ services:
       - ./backend:/app/
       - ./backend/node_modules/:/app/node_modules/
     command: yarn dev
+    environment:
+      - DATABASE_URL=mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@db/${MYSQL_DATABASE}
     depends_on:
       - db
 
