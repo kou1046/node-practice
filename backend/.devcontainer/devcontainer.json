@@ -1,0 +1,16 @@
+{
+  "name": "node-practice-backend",
+  "dockerComposeFile": ["./../../docker-compose.yml"],
+  "service": "backend",
+  "workspaceFolder": "/app",
+  "shutdownAction": "none",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "Prisma.prisma"
+      ]
+    }
+  }
+}
